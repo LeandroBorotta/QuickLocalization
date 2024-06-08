@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <main>
+        <section class="sidebar">
+            <div class="logo">
+                <img src="./assets/images/logoDashboard.png" alt="">
+            </div>
+
+            <div class="profile">
+                <img src="./assets/images/perfil.png" alt="Leandro" class="profile-pic">
+                <div class="profile-info">
+                    <span class="profile-name">Leandro</span>
+                    <span class="role">Administrador</span>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                    class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path
+                        d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                </svg>
+            </div>
+
+            <ul>
+                <li class="active">
+                    <i class="bi bi-house"></i>
+                    <a href="#">Dashboard</a>
+                </li>
+
+                <li>
+                    <i class="bi bi-pencil-fill"></i>
+                    <a href="#">Criação de ambientes</a>
+                </li>
+
+                <li>
+                    <i class="bi bi-pencil-square"></i>
+                    <a href="#">Edição de ambientes</a>
+                </li>
+
+                <li>
+                    <i class="bi bi-exclamation-circle"></i>
+                    <a href="#">Suporte de ajuda</a>
+                </li>
+
+            </ul>
+
+            <div class="logout">
+                <i class="bi bi-box-arrow-left"></i>
+                <a href="#">Logout</a>
+            </div>
+
+        </section>
+        <div class="overlay"></div>
+        <section class="content">
+            <div class="content-header">
+                <div>
+                    <i class="bi bi-list menu"></i>
+                    <form action="">
+                        <input type="text" placeholder="Search" class="text">
+                    </form>
+                </div>
+
+
+                <div class="profile">
+                    <img src="./assets/images/perfil.png" alt="Leandro" class="profile-pic">
+                    <div class="profile-info">
+                        <span class="profile-name">Leandro</span>
+                        <span class="role">Administrador</span>
+                    </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                        class="bi bi-bell-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
+                    </svg>
+                </div>
+
+
+            </div>
+
+
+            <div class="content-main">
+                <div class="room">sala 1</div>
+                <div class="room">sala 2</div>
+                <div class="room">sala 3</div>
+            </div>
+
+            <div class="map" style="background-image: url('./assets/images/mapa.jpg');">
+
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

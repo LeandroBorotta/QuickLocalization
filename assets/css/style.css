@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+    font-family: 'poppins', 'sans-serif';
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #000000, #2f3033, #353134, #48373a, #483739);
+    background-repeat: no-repeat;
+}
+
+main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 17%;
+    min-height: auto;
+    background-image: linear-gradient(to bottom, #7852b4, #935edf);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all ease-in-out 0.3s;
+    z-index: 1;
+}
+.sidebar .profile{
+    display: none;
+    justify-content: center;
+    margin: 10px;
+}
+.overlay{
+    display: none;
+}
+.sidebar .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar .logo img {
+    max-width: 100%;
+}
+
+
+
+
+.sidebar ul {
+    font-size: 16px;
+    list-style-type: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sidebar li {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 8px;
+}
+
+.sidebar li:hover,
+.sidebar .logout:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar ul li.active,
+.sidebar ul li.active a {
+    color: #fff;
+}
+
+.sidebar ul li.active {
+
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.sidebar a {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: all ease-in-out 0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul a:hover {
+    color: #fff;
+}
+
+.sidebar .logout {
+    width: 100%;
+    align-self: flex-start;
+    margin-top: auto;
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+}
+.sidebar .logout:hover,
+.sidebar .logout a:hover{
+    color: #fff;
+}
+.sidebar.reduced .logout{
+    text-align: center;
+}
+
+.sidebar.reduced {
+    width: 6%;
+    transition: all ease-in-out 0.4s;
+}
+
+.sidebar.reduced i{
+    font-size: 20px;
+}
+
+.sidebar.reduced ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar.reduced ul li {
+    margin: 20px 0;
+}
+
+.sidebar.reduced .logo img {
+    width: 100%;
+}
+
+
+
+.sidebar.reduced .logout a {
+    display: none;
+}
+
+.sidebar.reduced ul li a {
+    display: none;
+}
+
+
+.content {
+    flex: 1;
+    margin-left: 2%;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+}
+
+.content .content-header {
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: none;
+}
+
+.content .content-header input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    width: 350px;
+}
+
+.content .content-header input::placeholder {
+    margin-right: 10px;
+    text-align: right;
+}
+
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.profile .profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.profile .profile-info {
+    display: flex;
+    margin-right: 15px;
+    margin-left: 10px;
+    flex-direction: column;
+    color: white;
+
+}
+
+.profile .profile-name {
+    font-weight: bold;
+}
+
+.profile .role {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.profile svg {
+    color: #7852b4;
+}
+
+
+.content-main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    gap: 30px;
+}
+
+.content-main .room {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7852b4;
+    color: white;
+    flex: 1;
+    cursor: pointer;
+    text-align: center;
+    padding: 20px;
+    height: 200px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: all ease-in-out 0.3s;
+}
+
+.content-main .room:hover {
+    background-color: #925ee0
+}
+
+.map {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width:650px ) and (max-width:1000px){
+    .sidebar{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        height: 100%; 
+        width: 40%;
+        transform: translateX(-150%);
+        transition: transform 0.3s ease;
+        z-index: 10; 
+    }
+    .open{
+        display: block;
+        transform: translateX(0);
+    }
+
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 5;
+        display: none;
+    }
+    .overlay.show {
+        display: block;
+    }
+    .content {
+        width: 100%;
+    }
+    .menu{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+}
+
+@media (min-width:300px ) and (max-width:649px){
+    .sidebar .profile{
+        display: flex;
+        justify-content: start;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+        padding: 10px 0;
+    }
+
+    .sidebar{
+        position: fixed; 
+        top: 0;
+        left: 0;
+        height: 100%; 
+        width: 60%;
+        transform: translateX(-150%);
+        transition: transform 0.3s ease;
+        z-index: 10; 
+    }
+    .open{
+        display: block;
+        transform: translateX(0);
+    }
+
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); 
+        z-index: 5;
+        display: none;
+    }
+    .overlay.show {
+        display: block;
+    }
+    .content {
+        width: 100%;
+    }
+    .menu{
+        display: block;
+        font-size: 30px;
+        color: white;
+    }
+
+    .content .profile img,
+    .content .profile .profile-info{
+        display: none;
+    }
+
+    .content-header .profile{
+        display: flex;
+        align-items:end;
+    }
+   
+}
