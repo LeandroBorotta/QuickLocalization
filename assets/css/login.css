@@ -144,22 +144,6 @@ strong {
     font-weight: 800;
 }
 
-@media (max-width:767px) {
-    .form {
-        width: 100%;
-        background-color: #2f3033;
-    }
-
-    .titulo {
-        display: none;
-    }
-
-    .content {
-        padding: 10px 5px;
-    }
-
-}
-
 @media (max-width:360px) {
     .content form {
         margin-top: 40px;
@@ -174,6 +158,28 @@ strong {
 
 
 }
+
+
+@media (max-width:767px) {
+    .form {
+        width: 100%;
+        background-color: #2f3033;
+    }
+
+    .titulo {
+        display: none;
+    }
+    .content form{
+        margin-top: 40px;
+    }
+
+    .content {
+        padding: 10px 5px;
+    }
+
+}
+
+
 
 @media (min-width: 768px) and (max-width:999px) {
     .form {
