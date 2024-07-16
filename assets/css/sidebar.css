@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: "Barlow", Arial, sans-serif;
+}
+
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #161617;
+    color: #FFFFFF;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: width 0.3s;
+}
+
+.sidebar.collapsed {
+    width: 100px;
+}
+
+
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+    width: 100%;
+    position: relative;
+}
+
+.sidebar.collapsed.sidebar-header img{
+    margin: 0 auto;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+    transition: opacity 0.3s;
+}
+
+
+
+.title {
+    font-size: 1.2em;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .title {
+    display: none;
+    opacity: 0;
+}
+
+.toggle-btn {
+    position: absolute;
+    right: 0px;
+    background: none;
+    border: none;
+    color: #925FE2;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+.sidebar.collapsed .toggle-btn{
+    transform: rotate(180deg);
+}
+.sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    width: 100%;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    font-weight: bold;
+    color: #C8AFF1;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.sidebar.collapsed .menu-link{
+    display: flex;
+    justify-content: center;
+}
+.sidebar.collapsed.icon {
+    justify-content: center;
+}
+
+.menu-link:hover,
+.menu-item.active .menu-link {
+    background-color: rgba(146, 95, 226, 0.25);
+}
+
+.icon {
+    margin-right: 15px;
+    width: 20px;
+    transition: margin 0.3s, width 0.3s;
+}
+
+.sidebar.collapsed .icon {
+    margin-right: 0;
+    width: 20px;
+}
+
+.text {
+    font-size: 0.9em;
+    transition: opacity 0.3s;
+}
+
+.sidebar.collapsed .text {
+    opacity: 0;
+    display: none;
+}
+
+.menu-item.active .menu-link {
+    background-color: rgba(146, 95, 226, 0.25);
+    border-left: 5px solid #925FE2;
+    color: #FFFFFF;
+}
+
+.logout {
+    margin-top: auto;
+}

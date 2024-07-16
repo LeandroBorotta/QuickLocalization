@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="sidebar-header">
+            <img src="./assets/images/logo.png" alt="Logo" class="logo">
+            <span class="title">Quick location</span>
+            <button class="toggle-btn" onclick="toggleSidebar()">&#9664;</button>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <img src="./assets/images/home.png" alt="" class="icon">
+                    <span class="text">Dashboard</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <img src="./assets/images/list.png" alt="" class="icon">
+                    <span class="text">Criação e edição de ambientes</span>
+                </a>
+            </li>
+            <li class="menu-item active">
+                <a href="#" class="menu-link">
+                    <img src="./assets/images/olhoIcon.png" alt="" class="icon">
+                    <span class="text">Gerenciar ambientes</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <img src="./assets/images/mapa.png" alt="" class="icon">
+                    <span class="text">Mapa da instituição</span>
+                </a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-link">
+                    <img src="./assets/images/Icon.png" alt="" class="icon">
+                    <span class="text">Edição de perfil</span>
+                </a>
+            </li>
+            <li class="menu-item logout">
+                <a href="#" class="menu-link">
+                    <img src="./assets/images/home.png" alt="" class="icon">
+                    <span class="text">Logout</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="./assets/js/sidebar.js"></script>
+</body>
+
+</html>
