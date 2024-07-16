@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <main>
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <img src="./assets/images/logo.png" alt="Logo" class="logo">
+                <span class="title">Quick location</span>
+                <button class="toggle-btn" onclick="toggleSidebar()">&#9664;</button>
+            </div>
+
+            <div class="profile">
+                <img src="./assets/images/perfil.png" alt="Foto de perfil" class="profile-pic">
+                <div class="profile-info">
+                    <span class="profile-name">
+                        Letícia
+                    </span>
+                    <span class="role">
+                        Administrador
+                    </span>
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/home.png" alt="" class="icon">
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/list.png" alt="" class="icon">
+                        <span class="text">Criação e edição de ambientes</span>
+                    </a>
+                </li>
+                <li class="menu-item active">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/olhoIcon.png" alt="" class="icon">
+                        <span class="text">Gerenciar ambientes</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/mapa.png" alt="" class="icon">
+                        <span class="text">Mapa da instituição</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/Icon.png" alt="" class="icon">
+                        <span class="text">Edição de perfil</span>
+                    </a>
+                </li>
+                <li class="menu-item logout">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/home.png" alt="" class="icon">
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <section class="content">
+
+            <div class="content-header">
+
+                <div class="align-form">
+                    <i class="bi bi-list menu"></i>
+                    <div class="form">
+                        <form action="">
+                            <div class="input-container">
+                                <input type="text" placeholder="Procurar o ambiente" class="text">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img src="./assets/images/perfil.png" alt="Foto de perfil" class="profile-pic">
+                    <div class="profile-info">
+                        <span class="profile-name">
+                            Letícia
+                        </span>
+                        <span class="role">
+                            Administrador
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="selectEnvironment">
+                <p>Gerenciar ambientes</p>
+                <a href="#">Adicionar ambiente</a>
+
+            </div>
+            <p class="notice">Selecione o ambiente</p>
+            <div class="content-main">
+
+
+                <div class="environments">
+                    <div class="environment">
+                        <img src="./assets/images/recepcao.png" alt="foto da recepção">
+                        <p class="name">Recepção</p>
+
+                        <div class="buttons">
+                            <a href="" class="view">Visualizar</a>
+                            <a href="" class="view">Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="environment">
+                        <img src="./assets/images/salaReunioes.png" alt="foto da recepção">
+                        <p class="name">Sala de reuniões</p>
+
+                        <div class="buttons">
+                            <a href="" class="view">Visualizar</a>
+                            <a href="" class="view">Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="environment">
+                        <img src="./assets/images/departamento.png" alt="foto da recepção">
+                        <p class="name">departamento de TI</p>
+
+                        <div class="buttons">
+                            <a href="" class="view">Visualizar</a>
+                            <a href="" class="view">Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="environment">
+                        <img src="./assets/images/refeitorio.png" alt="foto da recepção">
+                        <p class="name">Refeitórios</p>
+
+                        <div class="buttons">
+                            <a href="" class="view">Visualizar</a>
+                            <a href="" class="view">Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="environment">
+                        <img src="./assets/images/fabrica.png" alt="foto da recepção">
+                        <p class="name">Chão de fábrica</p>
+
+                        <div class="buttons">
+                            <a href="" class="view">Visualizar</a>
+                            <a href="" class="view">Editar</a>
+                        </div>
+                    </div>
+
+                    <div class="environment">
+                        <img src="./assets/images/qualidade.png" alt="foto da recepção">
+                        <p class="name">Laboratórios de qualidade</p>
+
+                        <div class="buttons">
+                            <a href="" class="view">Visualizar</a>
+                            <a href="" class="view">Editar</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+</body>
+
+</html>

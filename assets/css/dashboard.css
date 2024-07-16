@@ -1,0 +1,113 @@
+
+
+
+
+/* gerenciar ambientes  */
+
+.content{
+    overflow-y: scroll;
+}
+
+.selectEnvironment{
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-top: 10px;
+}
+.selectEnvironment p{
+    color: #fff;
+    border: solid 3px #634892;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500; 
+    max-width: 300px;
+    padding: 5px 8px;
+}
+
+.selectEnvironment a {
+    text-decoration: none;
+    color: #499248;
+    border: solid 3px #499248;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500; 
+    max-width: 300px;
+    padding: 5px 8px;
+}
+
+.notice {
+    color: #fff;
+    margin-top: 10px;
+    padding: 0 20px;
+}
+
+.environments{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.environment{
+    background-color: #634892;
+    flex-basis: calc(30%);
+    margin: 20px;
+    border-radius: 15px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    
+}
+.environment img{
+    width: 100%;
+}
+.environment .name{
+    padding: 0 15px;
+    color: white;
+    font-size: 20px;
+}
+
+.environment .view{
+    display: block;
+    background-color: #191919;
+    text-decoration: none;
+    width: 30%;
+    margin: 10px;
+    color: white;
+    border-radius: 8px;
+    padding: 10px 20px;
+    border: none;
+    transition: all ease-in-out 0.3s;
+}
+
+.environment .view:hover{
+    transform: scale(1.1);
+}
+
+.buttons{
+    display: flex;
+}
+
+@media (min-width:300px ) and (max-width:649px){
+    .environment{
+        background-color: #634892;
+        flex-basis: calc(100%);
+        margin: 20px;
+        border-radius: 15px;
+        flex-grow: 1;
+        flex-shrink: 0;
+        
+    }
+
+    .selectEnvironment p:nth-child(1) {
+        color: #fff;
+        border: solid 3px #634892;
+        border-radius: 20px;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 500; 
+        min-width: 320px;
+    }
+}
