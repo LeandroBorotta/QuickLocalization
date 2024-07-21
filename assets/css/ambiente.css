@@ -1,0 +1,165 @@
+.content .content-header {
+    padding: 0;
+}
+
+.people-table {
+    margin: 20px 0;
+    flex: 1; 
+    overflow-x: auto;
+}
+
+.people-table table {
+    background-color: white;
+    width: 100%; 
+    padding: 15px;
+    border-collapse: collapse; 
+    border: 1px solid #ddd;
+}
+
+.people-table th,
+.people-table td {
+    padding: 15px 30px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; 
+    text-wrap: nowrap;
+}
+
+.people-table th {
+    border-bottom: solid 3px #e3e3e3;
+}
+
+.people-table .inside {
+    background-color: #398f47;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+}
+
+.people-table .outside {
+    background-color: #dc3545;
+    padding: 5px 10px;
+    color: white;
+    border-radius: 10px;
+    text-wrap: nowrap;
+}
+
+.paginate {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-top: 20px;
+}
+.paginate .divisor{
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 3px 6px;
+}
+.paginate i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.paginate a {
+    text-decoration: none;
+    color: #000;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.paginate a:hover {
+    background-color: #925fe2;
+    color: #fff;
+}
+
+.paginate a.active {
+    background-color: #925fe2;
+    color: #fff;
+    border-color: #925fe2;
+}
+
+.place-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 80px;
+}
+
+.place-information p:nth-child(1){
+    border: solid 3px #634892;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500; 
+    max-width: 300px;
+    padding: 5px 8px;
+    margin: 15px 0;
+}
+
+.place-information p{
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.place-anotation{
+    margin-top: 10px;
+    background-color: #C8AFF1;
+    border-radius: 10px;
+    max-width: 400px;
+    text-wrap: wrap;
+}
+
+.place-anotation .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #925FE2;
+    padding: 8px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: relative;
+    min-height: 50px;
+    min-width: 300px;
+    color: white;
+}
+
+.place-anotation .header img{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    background-color: white;
+    border-radius: 50%;
+    top: 45%;
+    right: 10%;
+}
+
+.place-anotation .main p:nth-child(1){
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.place-anotation .main p{
+    text-align: left;
+    word-wrap: break-word;
+    margin: 15px;
+}
+
+@media (max-width: 768px) {
+    .people-table {
+        overflow-x: auto;
+    }
+    
+    .people-table table {
+        min-width: 600px; 
+    }
+
+    .place-container > * {
+        width: 100%;
+    }
+
+}

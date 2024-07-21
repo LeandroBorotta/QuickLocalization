@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/dashboard.css">
+    <link rel="stylesheet" href="./assets/css/ambiente.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="overlay"></div>
+
+    <main>
+        <div class="sidebar collapsed">
+            <div class="sidebar-header">
+                <img src="./assets/images/logo.png" alt="Logo" class="logo">
+                <span class="title">Quick location</span>
+                <button class="toggle-btn" onclick="toggleSidebar()">&#9664;</button>
+            </div>
+
+            <div class="profile">
+                <img src="./assets/images/perfil.png" alt="Foto de perfil" class="profile-pic">
+                <div class="profile-info">
+                    <span class="profile-name">
+                        Letícia
+                    </span>
+                    <span class="role">
+                        Administrador
+                    </span>
+                </div>
+            </div>
+
+            <ul class="sidebar-menu">
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/home.png" alt="" class="icon">
+                        <span class="text">Dashboard</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/list.png" alt="" class="icon">
+                        <span class="text">Criação e edição de ambientes</span>
+                    </a>
+                </li>
+                <li class="menu-item active">
+                    <a href="gerenciar.html" class="menu-link active">
+                        <img src="./assets/images/olhoIcon.png" alt="" class="icon">
+                        <span class="text">Gerenciar ambientes</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/mapa.png" alt="" class="icon">
+                        <span class="text">Mapa da instituição</span>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/Icon.png" alt="" class="icon">
+                        <span class="text">Edição de perfil</span>
+                    </a>
+                </li>
+                <li class="menu-item logout">
+                    <a href="#" class="menu-link">
+                        <img src="./assets/images/home.png" alt="" class="icon">
+                        <span class="text">Logout</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+        <section class="content">
+
+            <div class="content-header">
+
+                <div class="align-form">
+                    <i class="bi bi-list menu"></i>
+                    <div class="form">
+                        <form action="">
+                            <div class="input-container">
+                                <input type="text" placeholder="Procurar o usuário" class="text">
+                                <i class="fas fa-search"></i>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="profile">
+                    <img src="./assets/images/perfil.png" alt="Foto de perfil" class="profile-pic">
+                    <div class="profile-info">
+                        <span class="profile-name">
+                            Letícia
+                        </span>
+                        <span class="role">
+                            Administrador
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="place-container">
+                <div class="place-information">
+                    <p>Gerenciar ambientes</p>
+                    <p>Departamento de T.I</p>
+
+                    <img src="./assets/images/departamento.png" alt="">
+                </div>
+
+                <div class="place-anotation">
+                    <div class="header">
+                        <p>Data 10/07/2024</p>
+                        <img src="./assets/images/logo.png" alt="">
+                    </div>
+
+                    <div class="main">
+                        <p>Anotações</p>
+                        <p>Todos os funcionários entraram no horário certo hoje</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="content-main">
+                <div class="people-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Nome</th>
+                                <th>Email</th>
+                                <th>Horário de entrada</th>
+                                <th>Horário de saída</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>João</td>
+                                <td>joão@gmail.com</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>
+                                    <a class="inside">No local</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Maria</td>
+                                <td>maria@gmail.com</td>
+                                <td>10</td>
+                                <td>12</td>
+                                <td>
+                                    <a class="outside">Não Conectado</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Carlos</td>
+                                <td>carlos@gmail.com</td>
+                                <td>11</td>
+                                <td>15</td>
+                                <td>
+                                    <a class="inside">No local</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ana</td>
+                                <td>ana@gmail.com</td>
+                                <td>9</td>
+                                <td>13</td>
+                                <td>
+                                    <a class="outside">Não Conectado</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Paulo</td>
+                                <td>paulo@gmail.com</td>
+                                <td>12</td>
+                                <td>14</td>
+                                <td>
+                                    <a class="inside">No local</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Sandra</td>
+                                <td>sandra@gmail.com</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>
+                                    <a class="outside">Não Conectado</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Ricardo</td>
+                                <td>ricardo@gmail.com</td>
+                                <td>11</td>
+                                <td>16</td>
+                                <td>
+                                    <a class="inside">No local</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Lucas</td>
+                                <td>lucas@gmail.com</td>
+                                <td>9</td>
+                                <td>12</td>
+                                <td>
+                                    <a class="outside">Não Conectado</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Fernanda</td>
+                                <td>fernanda@gmail.com</td>
+                                <td>13</td>
+                                <td>15</td>
+                                <td>
+                                    <a class="inside">No local</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Juliana</td>
+                                <td>juliana@gmail.com</td>
+                                <td>10</td>
+                                <td>14</td>
+                                <td>
+                                    <a class="outside">Não Conectado</a>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+                </div>
+
+            </div>
+            <div class="paginate">
+                <div class="divisor">
+                    <i id="arrow-left" class="bi bi-arrow-left"></i>
+                    <a href="">1</a>
+                    <i id="arrow-right" class="bi bi-arrow-right"></i>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./assets/js/menu.js"></script>
+    <script src="./assets/js/sidebar.js"></script>
+</body>
+
+</html>

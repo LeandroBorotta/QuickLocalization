@@ -44,6 +44,13 @@
     padding: 0 20px;
 }
 
+.notice img{
+    margin-top: 10px;
+    min-width: 320px;
+    height: 220px;
+    object-fit: cover;
+}
+
 .environments{
     flex: 1;
     display: flex;
